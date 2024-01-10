@@ -33,7 +33,7 @@ test.beforeEach(async ({ page }) => {
     await page.getByLabel('Password').click();
     await page.getByLabel('Password').fill('Asdf@1234');
     await page.getByRole('button', { name: 'Sign In' }).click();
-    await expect(page.getByRole('banner')).toContainText('Welcome, Jijo Mahesh!');
+    await expect.soft(page.getByRole('banner')).toContainText('Welcome, Jijo Mahesh!');
 });
 
 test.afterEach(async ({ page }) => {
@@ -69,5 +69,5 @@ test('Product List', async ({ page }) => {
     await product1.getByLabel('S', { exact: true }).click();
     await product1.getByLabel('Green').click();
     await product1.locator('button').last().click();
-    await expect(page.getByRole('alert')).toContainText('You added Marco Lightweight Active Hoodie to your shopping cart.');
+    await expect.soft(page.getByRole('alert')).toContainText('You added Marco Lightweight Active Hoodie to your shopping cart.');
 });

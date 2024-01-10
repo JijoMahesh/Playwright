@@ -12,7 +12,7 @@ test('order product for new customer', async({ page }) => {
     // await page.goto('https://magento.softwaretestingboard.com/customer/account/create/');
     await homePage.gotoHomePage();
     await homePage.gotoSignupPage();
-    await signup.createAccount('jijomahesh4@gmail.com')
+    await signup.createAccount('jijomahesh6@gmail.com')
     await homePage.navigateToHoodiesPage();
     // await page.pause();
     await productList.selectSingleProductToAddToCard(/Marco Lightweight Active/,'S','Green')
