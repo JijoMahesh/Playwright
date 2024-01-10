@@ -10,7 +10,7 @@ test.skip('Create an Account', async ({ page }) => {
     await page.getByLabel('Last Name').click();
     await page.getByLabel('Last Name').fill('Mahesh');
     await page.getByLabel('Email', { exact: true }).click();
-    await page.getByLabel('Email', { exact: true }).fill('luffyjijo4@gmail.com');
+    await page.getByLabel('Email', { exact: true }).fill('luffyjijo8@gmail.com');
     await page.getByRole('textbox', { name: 'Password*', exact: true }).click();
     await page.getByRole('textbox', { name: 'Password*', exact: true }).fill('Asdf@1234');
     await page.getByLabel('Confirm Password').click();

@@ -12,7 +12,7 @@ test('order product for new customer', async({ page }) => {
 
     await homePage.gotoHomePage();
     await homePage.gotoSignupPage();
-    await signup.createAccount('jijomahesh6@gmail.com')
+    await signup.createAccount('jijomahesh7@gmail.com')
     await homePage.navigateToHoodiesPage();
     // await page.pause();
     await productList.selectSingleProductToAddToCard(/Marco Lightweight Active/,'S','Green')
@@ -20,6 +20,7 @@ test('order product for new customer', async({ page }) => {
     await page.close()
     
 })
+
 
 test('order product for Existing customer', async({ page }) => {
     test.sl
